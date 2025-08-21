@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather Statistics</title>
+<style>
+        body { font-family: Arial, sans-serif; margin: 2em; background: #f4f4f4; }
+        h1 { color: #333; }
+        .stat { background: #fff; padding: 1em; margin-bottom: 1em; border-radius: 5px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+</style>
+</head>
+<body>
+<h1>Weather Statistics</h1>
+    {% for name, values in stats.items() %}
+<div class="stat">
+<h2>{{ name }}</h2>
+<p><strong>Max:</strong> {{ values.max }}</p>
+<p><strong>Min:</strong> {{ values.min }}</p>
+<p><strong>Avg:</strong> {{ values.avg }}</p>
+</div>
+    {% endfor %}
+</body>
+</html>
