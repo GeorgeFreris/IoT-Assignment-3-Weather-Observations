@@ -42,4 +42,4 @@ if response.status_code == 200:
     }
 
 
-return stats
+    return stats
