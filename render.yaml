@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: bom-weather-api
+    name: perth-airport-weather-observations
     env: python
     plan: free
     buildCommand: ""
